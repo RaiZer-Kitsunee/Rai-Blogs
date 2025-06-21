@@ -1,4 +1,4 @@
-import About from "./Components/About";
+import Authors from "./Components/Authors";
 import BlogDetails from "./Components/Blog_Details";
 import Create from "./Components/Create";
 import Home from "./Components/Home";
@@ -10,13 +10,13 @@ function App() {
     <Router>  
       <div className="App">
         <NavBar/>
-        <div className="holder"></div>
+        <div className="holder">.</div>
         <div className="content">
             <Routes>
               <Route exact path="/" Component={Home}/>
               <Route path="/create" Component={Create}/>
               <Route path="/blog/:id" Component={BlogDetails}/>
-              <Route path="/about" Component={About}/>
+              <Route path="/Authors" Component={Authors}/>
               <Route path="*" Component={() => <div>404 Not Found</div>} />
             </Routes>
         </div>

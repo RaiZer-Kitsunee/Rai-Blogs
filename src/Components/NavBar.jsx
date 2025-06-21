@@ -7,9 +7,15 @@ const NavBar = () => {
         <h2>Rai Blogs</h2>
       </Link>
       <div className="tags">
-        <Link to="/">Home</Link>
-        <Link to="/create">New Blog</Link>
-        <Link to="/about">About</Link>
+        <Link className="nav-a" to="/">
+          Home
+        </Link>
+        <Link className="nav-a" to="/create">
+          New Blog
+        </Link>
+        <Link className="nav-a" to="/Authors">
+          Authors
+        </Link>
       </div>
     </nav>
   );

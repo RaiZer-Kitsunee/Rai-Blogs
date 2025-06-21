@@ -1,5 +1,6 @@
 import useFetch from "../Hooks/useFetch";
 import BlogList from "./Blogs_List";
+import Closed from "./Closed";
 
 const Home = () => {
   const {
@@ -10,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      {error && <div>Error: {error}</div>}
+      {error && <Closed />}
       {isLoading && <div>Loading...</div>}
       {blogs && (
         <>
