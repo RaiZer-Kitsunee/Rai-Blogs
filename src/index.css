@@ -47,17 +47,24 @@
   height: 60px;
 }
 
-.navbar h2 {
+.navbar .home-title {
   color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.navbar .home-title:hover {
+  cursor: pointer;
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .navbar .nav-a {
   color: var(--color-surface);
   text-decoration: none;
-  border: 1px solid var(--color-border);
   padding: 5px 10px;
   border-radius: 7px;
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 .navbar .nav-a:hover {
@@ -67,12 +74,7 @@
   color: var(--color-text);
 }
 
-.navbar h2:hover {
-  cursor: pointer;
-  text-decoration: none;
-  transform: scale(1.1);
-  transition: transform 0.2s ease-in-out;
-}
+
 
 .home{
   margin-top: 50px;;

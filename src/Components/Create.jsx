@@ -55,7 +55,7 @@ const Create = () => {
     }
   };
 
-  // hnadleToggle function to toggle the author selection
+  // handleToggle function to toggle the author selection
   const handleToggle = () => {
     setToggle(!toggle);
     setAuthor(""); // Resetting author when toggling
